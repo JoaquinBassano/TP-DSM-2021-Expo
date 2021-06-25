@@ -7,7 +7,6 @@ import Button from './Button';
 const AlbumDetail = ({navigation, title, albumId}) => {
   const {
     headerContentStyle,
-
     headerTextStyle,
     imageStyle,
   } = styles;
@@ -16,7 +15,7 @@ const AlbumDetail = ({navigation, title, albumId}) => {
     <Card>
       <CardSection>
         <View style={headerContentStyle}>
-          <Text style={headerTextStyle}>{title}</Text>
+          <Text style={headerTextStyle}>{title.toUpperCase()}</Text>
         </View>
       </CardSection>
 
@@ -37,6 +36,7 @@ const styles = {
   },
   headerTextStyle: {
     fontSize: 18,
+    color: '#000000'
   },
   thumbnailStyle: {
     height: 50,

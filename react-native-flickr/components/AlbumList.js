@@ -34,7 +34,7 @@ const AlbumList = (props) => {
   }
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, backgroundColor: '#323232'}}>
       
       <FlatList data={photoset}
                 renderItem={renderAlbums}
